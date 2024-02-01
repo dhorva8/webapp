@@ -31,10 +31,11 @@
         }
       }
       
-      #ilustracija {
-        display: flex;
+      .ilustracija {
+        display: flexbox;
        /* float: left; */
-        float:inline-start;
+        float:inline-end;
+        margin-top:1%;
         margin-right: 1%;
         margin-left: 1%;
         width:fit-content;
@@ -72,6 +73,9 @@
         text-decoration: underline;
         margin-bottom: 1rem;
       }
+      .gallery_item {
+        height:200px;
+      }
      
     </style>
 	</head>
@@ -81,7 +85,7 @@
       <H1 style="text-align:center;">Projektni zadatak za kolegij</H1> 
       <hr> 
       <nav>
-            <ul style="list-style: none; display:flex;border: 2px dotted black;width: fit-content;">
+            <ul style="list-style: none; display:flex;border: 2px dotted black;width:10%">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="news.html">News</a></li>
@@ -94,32 +98,40 @@
     </header>
     
     <main>
-      <illustration id="ilustracija">
-      <figure style="margin-top:1%; margin-left:3%;display: inline;height:100%;padding:1% 1% 1% 1%;border: 2px solid black;">
-        <img class="runner"
-          src="../assets/img/giphy.webp"
+      <h2 style="text-align: left;text-transform:lowercase;margin-top: 1%;">WHOAMI...</h2>  
+      
+    <illustration class="ilustracija">
+        
+        <figure style="margin-top:1%; margin-left:5%;display:block;height:100%;padding:1% 1% 1% 1%;">
+        <img class="gallery_item"
+          src="../assets/img/gamer80.jpg"
           alt="running stick figure through the 2D maze"
-          width="100%" 
+         style="border: black 2px solid;"
         />
-        <figcaption style="text-align: center;">Running stick figure</figcaption>
-       </figure>
+        <figcaption style="text-align: center;margin-left:5%">Gamer in the 80's</figcaption>
+        </figure>
     </illustration>
-    <clanak class="article">
-      <h2 >Heading A</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsum, quos maxime eum animi obcaecati dolore inventore aperiam, optio voluptas omnis, nobis non laboriosam ipsam eligendi dolor incidunt a! Fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam vitae explicabo ipsa magni cumque voluptas, quo enim magnam cupiditate, exercitationem molestiae unde provident alias, culpa ab consequuntur aliquid. Explicabo, numquam!Lorem</p>
-    </clanak>
-    <clanak class="article">
-      <h2 >Heading B</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsum, quos maxime eum animi obcaecati dolore inventore aperiam, optio voluptas omnis, nobis non laboriosam ipsam eligendi dolor incidunt a! Fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam vitae explicabo ipsa magni cumque voluptas, quo enim magnam cupiditate, exercitationem molestiae unde provident alias, culpa ab consequuntur aliquid. Explicabo, numquam!Lorem</p>
-    </clanak>
-    <clanak class="article">
-      <h2 >Heading C</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsum, quos maxime eum animi obcaecati dolore inventore aperiam, optio voluptas omnis, nobis non laboriosam ipsam eligendi dolor incidunt a! Fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam vitae explicabo ipsa magni cumque voluptas, quo enim magnam cupiditate, exercitationem molestiae unde provident alias, culpa ab consequuntur aliquid. Explicabo, numquam!Lorem</p>
-    </clanak>
-    <clanak class="article">
-      <h2 >Heading D</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsum, quos maxime eum animi obcaecati dolore inventore aperiam, optio voluptas omnis, nobis non laboriosam ipsam eligendi dolor incidunt a! Fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam vitae explicabo ipsa magni cumque voluptas, quo enim magnam cupiditate, exercitationem molestiae unde provident alias, culpa ab consequuntur aliquid. Explicabo, numquam!Lorem</p>
-    </clanak>
+    <div style="display:block">
+        <list>
+        <ul style="list-style-type:none;margin-left:10%;margin-top:1%;padding-left:1%;padding-top:0;padding-right:1%;border: 1px black solid;width:5%;">
+            <li style="font-weight: bold;">Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+            </ul>
+            <ul style="list-style-type:none;margin-left:10%;margin-top:1%;padding-left:1%;padding-top:0;padding-right:1%;border: 1px black solid;width:5%;">
+                <li>Dog</li>
+                <li>Arachne</li>
+                <li style="font-weight: bold;">Cat</li>    
+            </ul>
+            <ul style="list-style-type:none;margin-left:10%;margin-top:1%;padding-left:1%;padding-top:0;padding-right:1%;border: 1px black solid;width:5%;">
+                <li>Carnivore</li>
+                <li style="font-weight: bold;">Omnivore</li>
+                <li >Herbivore</li>    
+            </ul>
+        </list>
+    </div>
+    Some text like...
+    
     </main>
 
     <footer style="border-top: 2px dotted red;border-bottom: 2px dotted red;height:fit-content ;width:98%;position: absolute;bottom:0;background-color: black;"> 
