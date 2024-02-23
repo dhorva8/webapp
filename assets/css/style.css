@@ -1,0 +1,53 @@
+
+.logo {
+    display: block;
+    margin-top:1%;
+    margin-left: auto;
+    margin-right:auto;
+    width:150px;
+    border: 2px black dotted;
+    border-radius: 1%;
+  }
+
+  #ilustracija {
+    display: block;
+    float: left;
+   
+    margin-right: 1%;
+    margin-left: 1%;
+    width:fit-content%;
+  }
+  .article {
+    margin-top:1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-left: 1rem;
+    /*line-height: 2rem;*/
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  nav ul {
+    background-color: transparent;
+    size: 30%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2%;
+  }
+  nav a {
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin: 5px 10px 5px 10px;
+    padding: 0% 0% 0% 2% ;
+  }
+  nav a:hover {background-color: red;color:yellow;}
+  nav ul li {
+    border: 1px black dashed;
+    }
+  clanak h2 {
+    text-decoration: underline;
+    margin-bottom: 1rem;
+  }
+ 

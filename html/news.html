@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html lang="hr">
+	<head>
+		<title>Projektni zadatak - Web aplikacije</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="description" content="Projektni zadatak koji pokazuje usvojena znanja iz područja HTML/CSS i izrade web aplikacija">
+		<meta name="keywords" content="projekt zadatak html css">
+		<meta name="author" content="Danijel Horvat">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- Učitava vanjski CSS -->
+        <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <!-- Učitan vanjski CSS -->
+    <style>
+      * {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+      }
+      
+      .runner{
+        
+        /*klasa koja će za IMG element invertirati boje - prepoznavanje da li je uređaj u dark modeu ili ne - odgovarajući media query za gif na početnoj stranici */
+        @media (prefers color-scheme:dark) {
+          filter:invert(1);
+        }
+      }
+      
+      /*Ekran je između 480 i 768px - tablet ili mobitel - sav sadržaj se prikazuje jedan ispod drugog u "grid načinu" prikaza. */
+      @media only screen and (min-width:480px) and (max-width:768px) {
+        nav { 
+          display:grid;
+          width:96%;
+        }
+        nav ul {
+          width:96%;
+        }
+        main {display:grid;margin-top:2% ;}
+        .article {display: grid;}
+        illustration {display: grid;}
+        div {display: grid;}
+      }
+/* Ekran je veći od 770px širine - prikaži sav sadržaj u desktop modu, navigacijski izbornik je "u liniji" kao i sadržaj, sve skalira sa stranicom. */
+      @media only screen and (min-width:770px) {
+        nav {display:flex;
+        width:fit-content;}
+        nav ul {display:flex}
+        main {display: flex;}
+      }
+/* Ekran uži od 300px - sakrij sve sa stranice */
+      @media only screen and (max-width:300px) {
+        body {display:none}
+      }
+     
+    </style>
+	</head>
+	<body style="background-color: whitesmoke;margin: 1% 1% 1% 1%;padding: 0;">
+    <header>
+      <img class="logo" src="../assets/img/logo-wa.png" alt="Logo Web aplikacije"/>
+      <H1 style="text-align:center;">Projektni zadatak za kolegij</H1> 
+      <hr> 
+      <nav>
+            <ul style="list-style: none;border: 2px dotted black;width: fit-content;">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Images</a></li>
+                <li><a href="news.html">Media</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                
+            </ul>
+      </nav>
+      <hr>
+    </header>
+    
+   
+     <main style="margin-top: 1%;margin-bottom: 1%;">
+            
+           
+            <div style="float:left;width: 33%;margin-left: 2%;background-color: blue;">
+            <h3 style="margin-bottom: 1%;  text-align:center;border: 1px black solid;margin-top:1%;margin-left: 1%;margin-right: 1%;">Skool Daze remake - YT embedded video</h3>
+            <center><iframe style="margin-bottom: 1%;" src="https://www.youtube.com/embed/KW-yEw-af9I?si=3ceX1sAcxAXoVJU-" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+            <p style="text-align: center;">Skool Daze is an 8bit game first made for Sinclair ZX spectrum and Amstrad CPC.</p>
+            </div>
+            <div style="float: left;width: 30%;margin-left: 2%;background-color: green;">
+                <h3 style="margin-bottom: 1%;  text-align:center;border: 1px black solid;margin-top:1%;margin-left: 1%;margin-right: 1%;">HTML5 audio element</h3>
+            <center><audio controls>
+                <source src="../assets/media/winamp.mp3">
+                Your browser does not support the audio element.
+            </audio></center>
+            <p style="text-align: center;">Winamp jingle</p>
+            </div>
+            <div style="float: left; width: 31%;margin-left:2%;background-color: red;">
+                <h3 style="margin-left: 1%; margin-bottom: 1%;margin-top: 1%;margin-right: 1%;  text-align:center;border: 1px black solid;margin-top:1%;">HTML5 video element </h3>
+                <center><video width="80%" height="80%" controls poster="">
+                    <!-- video width="100%" height="100%" controls -->
+                    <source src="../assets/media/jtnp.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                </center> 
+                <p style="text-align: center;">Jack the nipper on ZX Spectrum 48k</p>
+            </div>
+            
+            
+          
+     </main>
+
+    <footer style="border-top: 2px dotted red;border-bottom: 2px dotted red;height:fit-content ;width:100%;position: relative;bottom:0;background-color: black;"> 
+
+        <p style="color:whitesmoke;text-transform: uppercase;text-align: center;word-spacing: 0px;font-weight: bold;width: 100%;margin-top: 5px;margin-bottom: 5px;height: auto;">&copy; Danijel Horvat in 2024. &nbsp;<a href="#top" style="text-decoration: none; font-weight:bold;color:whitesmoke">^^^</a>
+          </p>
+        
+    
+        
+    </footer> 
+	</body>
+</html>

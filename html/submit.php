@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="hr">
+	<head>
+		<title>Projektni zadatak - Web aplikacije</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="description" content="Projektni zadatak koji pokazuje usvojena znanja iz područja HTML/CSS i izrade web aplikacija">
+		<meta name="keywords" content="projekt zadatak html css">
+		<meta name="author" content="Danijel Horvat">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <style>
+      * {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+      }
+      /*.logo {
+        display: block;
+        margin-top:1%;
+        margin-left: auto;
+        margin-right:auto;
+        width:150px;
+        border: 2px black dotted;
+        border-radius: 1%;
+      }*/
+      .runner{
+        
+        /*klasa koja će za neki IMG element invertirati boje - prepoznavanje da li je uređaj u dark modeu ili ne - odgovarajući media query */
+        @media (prefers color-scheme:dark) {
+          filter:invert(1);
+        }
+      }
+
+      .form_center {
+      margin-left: 40%;
+      margin-right:40%;  
+      justify-content: center;
+      }
+      
+      form {
+        margin-top:2%;
+        margin-bottom:2%;
+        border: 1px solid black;
+      }
+      
+      @media only screen and (min-width:480px) and (max-width:768px) {
+        nav { 
+          display:grid;
+          width:96%;
+        }
+        nav ul {
+          width:96%;
+        }
+        main {display:grid;margin-top:2% ;}
+        .article {display: grid;}
+        illustration {display: grid;}
+      }
+      @media only screen and (min-width:770px) {
+        nav {display:flex;
+        width:fit-content;}
+        nav ul {display:flex}
+      }
+    </style>
+	</head>
+	<body style="background-color: whitesmoke;margin: 1% 1% 1% 1%;padding: 0;">
+    <header>
+      <img class="logo" src="../assets/img/logo-wa.png" alt="Logo Web aplikacije"/>
+      <H1 style="text-align:center;">Projektni zadatak za kolegij</H1> 
+      <hr> 
+      <nav>
+            <ul style="list-style: none;border: 2px dotted black;">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                
+            </ul>
+      </nav>
+      <hr>
+    </header>
+    
+    <main>
+     
+      <h3 style="margin-top:2%;margin-bottom:2%;text-align: center;">Thank you for your input!</h3>
+
+
+    </main>
+   
+    <footer style="border-top: 2px dotted red;border-bottom: 2px dotted red;height:fit-content ;width:100%;position: relative;bottom:0;background-color: black;"> 
+      
+        <p style="color:whitesmoke;text-transform: uppercase;text-align: center;word-spacing: 0px;font-weight: bold;width: 100%;margin-top: 5px;margin-bottom: 5px;height: auto;">&copy; Danijel Horvat in 2024. &nbsp;<a href="#top" style="text-decoration: none; font-weight:bold;color:whitesmoke">^^^</a>
+          </p>
+        
+    
+        
+    </footer> 
+	</body>
+</html>
